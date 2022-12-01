@@ -1,8 +1,13 @@
+print ("Alat Pengecek Palindrome")
+print ("Masukan kata anda")
+x = str(input(">> "))
+print ("")
 def funPalindrome():
-    x = input("Masukan kata : ")
-    if x =='katak':
-        print("yes")
-    else :
-        print("No")
-    print("Jika Dibalik: ",x)
+    if x == x[::-1]:
+        print ("Yes")
+        print ("Jika dibalik ",x[::-1])
+    else:
+        print ("No")
+        print ("Jika dibalik ",x[::-1])
+
 funPalindrome()
